@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     max-width: 100%;
 }
@@ -13,6 +17,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 /* CSS grid */
 
 .grid-container {
@@ -21,17 +30,16 @@ body{
     margin: 20px auto;
     display: grid;
     text-align: center;
-    grid-gap: 20px;
+    grid-gap: 15px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: 
-    "header navigation navigation"
+    "header header header"
     "main main aside"
     "footer footer footer";
 }
 
 .grid-container .header,
-.grid-container .navigation,
 .grid-container .main,
 .grid-container .aside,
 .grid-container .footer {
@@ -42,10 +50,8 @@ body{
 
 .grid-container .header {
     grid-area: header;
-}
-
-.grid-container .navigation {
-    grid-area: navigation;
+    padding: 0;
+    background-color: rgba(245, 141, 148, 0.780);
 }
 
 .grid-container .main {
@@ -71,47 +77,64 @@ body{
     }
 }
 
-.navigation #nav1,
-.navigation #nav2,
-.navigation #nav3 {
-    font-size: 20px;
+.navigation .services,
+.navigation .projects,
+.navigation .contact {
     display: inline;
+    background-color: #E9ECF4;
+    color: green;
+    font-size: 30px;
     width: 30px;
     padding: 5px;
-    margin: 30px;
+    margin: 35px;
     transition: 0.3s;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
-#nav1:hover {
+.services:hover {
     box-shadow: 0px 5px 5px red;
     color: red;
-    font-size: 21px;
+    font-size: 32px;
+    cursor: pointer;
 }
 
-#nav2:hover {
+.projects:hover {
     box-shadow: 0px 5px 5px blue;
     color: blue;
-    font-size: 21px;
+    font-size: 32px;
+    cursor: pointer;
 }
 
-#nav3:hover {
+.contact:hover {
     box-shadow: 0px 5px 5px purple;
     color: purple;
-    font-size: 21px;
+    font-size: 32px;
+    cursor: pointer;
 }
 
-#nav1:active {
+.services:active {
     background-color: red;
     color: white;
 }
 
-#nav2:active {
+.projects:active {
     background-color: blue;
     color: white;
 }
 
-#nav3:active {
+.contact:active {
     background-color: purple;
     color: white;
+}
+
+.title {
+    width: 30%;
+    height: auto;
+    margin: 30px;
+    padding: 15px;
+    background-color: silver;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px red, 10px 10px blue, 15px 15px purple;
 }
