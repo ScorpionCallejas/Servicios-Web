@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    background: #E9ECF4;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS grid */
+
+.grid-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    text-align: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header navigation navigation"
+    "main main aside"
+    "footer footer footer";
+}
+
+.grid-container .header,
+.grid-container .navigation,
+.grid-container .main,
+.grid-container .aside,
+.grid-container .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.grid-container .header {
+    grid-area: header;
+}
+
+.grid-container .navigation {
+    grid-area: navigation;
+}
+
+.grid-container .main {
+    grid-area: main;
+}
+
+.grid-container .aside {
+    grid-area: aside;
+}
+
+.grid-container .footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-areas: 
+        "header header header"
+        "navigation navigation navigation"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+    }
+}
+
+.navigation #nav1,
+.navigation #nav2,
+.navigation #nav3 {
+    font-size: 20px;
+    display: inline;
+    width: 30px;
+    padding: 5px;
+    margin: 30px;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+#nav1:hover {
+    box-shadow: 0px 5px 5px red;
+    color: red;
+    font-size: 21px;
+}
+
+#nav2:hover {
+    box-shadow: 0px 5px 5px blue;
+    color: blue;
+    font-size: 21px;
+}
+
+#nav3:hover {
+    box-shadow: 0px 5px 5px purple;
+    color: purple;
+    font-size: 21px;
+}
+
+#nav1:active {
+    background-color: red;
+    color: white;
+}
+
+#nav2:active {
+    background-color: blue;
+    color: white;
+}
+
+#nav3:active {
+    background-color: purple;
+    color: white;
+}
