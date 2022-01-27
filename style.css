@@ -10,25 +10,32 @@ img {
     max-width: 100%;
 }
 
-body{
+body {
     margin: 0;
     background: #E9ECF4;
     color: #000;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
-.badge-base{
+
+.badge-base {
     width: 81%;
     display: block;
     margin: 0 auto;
 }
+
 a {
-    color: #000;
+    color: yellow;
     text-decoration: none;
 }
-a:hover{
-    text-decoration: dashed;
+
+a:hover {
+    color: turquoise;
 }
 
+a:active {
+    color: purple;
+}
 
 /* CSS grid */
 
@@ -68,21 +75,14 @@ a:hover{
 
 .grid-container .aside {
     grid-area: aside;
+    text-transform: uppercase;
+    background-color: rgba(216, 250, 216, 0.8);
 }
 
 .grid-container .footer {
     grid-area: footer;
-}
-
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-areas: 
-        "header header header"
-        "navigation navigation navigation"
-        "main main main"
-        "aside aside aside"
-        "footer footer footer";
-    }
+    background-color: rgb(8, 8, 168);
+    color: white;
 }
 
 .navigation .services,
@@ -97,6 +97,7 @@ a:hover{
     margin: 35px;
     transition: 0.3s;
     border-radius: 10px;
+    font-family: fantasy;
 }
 
 .services:hover {
@@ -136,13 +137,100 @@ a:hover{
 }
 
 .title {
-    width: 30%;
+    font-family: cursive;
+    font-size: 1.5em;
+    width: 40%;
     height: auto;
-    margin: 30px;
+    margin: 25px;
     padding: 15px;
     background-color: silver;
     color: red;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 5px 5px red, 10px 10px blue, 15px 15px purple;
+    box-shadow: -5px -5px blue, 5px 5px purple;
+}
+
+.text {
+    text-align: left;
+    font-size: 1em;
+}
+
+.subtitle {
+    color: rgb(255, 247, 233);
+    text-shadow: blue 0 0 10px, blue 0 0 10px, blue 0 0 10px;
+}
+
+.target-presentation {
+    background-color: rgb(188, 255, 188);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 7px 7px 7px black;
+}
+
+.buttom {
+    display: block;
+    width: 80%;
+    border: red 5px groove;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 0, 0.5);
+    color: rgb(216, 24, 7);
+    font-weight: bold;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-areas: 
+        "header header header"
+        "navigation navigation navigation"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+    }
+
+    .badge-base {
+        width: 250px;
+    }
+
+    .presentation {
+        overflow: scroll;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .target-presentation {
+        width: 300px;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 450px) {
+    .title {
+        width: 70%;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    .presentation {
+        overflow: scroll;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .target-presentation {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
