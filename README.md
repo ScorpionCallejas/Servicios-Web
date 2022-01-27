@@ -8,6 +8,12 @@ Habemos X personas que están trabajando en el proyecto, que se encuentran en la
   3. [Sitio Web](https://3dgar-xd.github.io/Portfolio/)
   4. [Email](mailto:ejlc2001@gmail.com)
 
+- Raul Callejas.
+  1. [Github](https://github.com/ScorpionCallejas/)
+  2. [LinkedIn](https://www.linkedin.com/in/raul-callejas-front-end/)
+  3. [Sitio Web](https://ComputerLearning5.blogspot.com)
+  4. [Email](scorpionmorales17@gmail.com)
+
 <!-- Aqui se van añadiendo más personas-->
 
 <!-- no se que mas añadir -->
