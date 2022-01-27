@@ -16,11 +16,19 @@ body{
     color: #000;
     font-family: 'Roboto', sans-serif;
 }
-
+.badge-base{
+    width: 81%;
+    display: block;
+    margin: 0 auto;
+}
 a {
     color: #000;
     text-decoration: none;
 }
+a:hover{
+    text-decoration: dashed;
+}
+
 
 /* CSS grid */
 
@@ -33,7 +41,7 @@ a {
     grid-gap: 15px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
+    grid-template-areas:
     "header header header"
     "main main aside"
     "footer footer footer";
