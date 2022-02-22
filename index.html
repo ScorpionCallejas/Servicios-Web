@@ -1,87 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Servicios Web</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid-container">
-        <!-- Aqui va el logo -->
-        <header class="header">
-            <img src="assets/images/Logotipo.png" alt="Imagen de Logotipo" class="logotipo">
-            <!-- Aqui el menu de navegación -->
-            <nav class="navigation">
-                <a href="#services" class="services">Servicios</a>
-                <a href="#projects" class="projects">Proyectos</a>
-                <a href="#contact" class="contact">Contacto</a>
-            </nav>
-        </header>
-        <!-- Aqui el contenido -->
-        <main class="main">
-            <section>
-                <header>
-                    <h2 class="title" id="services">Servicios</h2>
-                </header>
-                <main>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ab eum optio nobis quos mollitia hic, tempore provident temporibus nisi earum expedita, atque ipsa quae inventore aliquid porro beatae ea.
-                    </p>
-                </main>
-            </section>
-            <section>
-                <header>
-                    <h2 class="title" id="projects">Proyectos</h2>
-                </header>
-                <main>
-                    <div class="text" id="developerProject">
-                    </div>
-                </main>
-            </section>
-            <section>
-                <header>
-                    <h2 class="title" id="contact">Contacto</h2>
-                </header>
-                <main>
-                    <div>
-                        Si quieres contactarnos, puedes hacerlo a través de los siguientes medios:
-                        <div class="text" id="developerContact">
-                        </div>
-                    </div>
-                </main>
-            </section>
-        </main>
-        <!-- Información de los participantes del proyecto y formulario de contacto -->
-        <aside class="aside">
-            <h2 class="subtitle">Desarrolladores</h2>
-            <div class="presentation">
-                <article class="target-presentation">
-                    <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="3dgarxd" data-version="v1"></div>
-                    <a href="#" class="buttom" target="_blank">Ver portafolio</a>
-                </article>
-                <article class="target-presentation">
-                    <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="raul-callejas-front-end" data-version="v1"></div>
-                    <a href="https://ComputerLearning5.blogspot.com" class="buttom" target="_blank">Ver portafolio</a>
-                </article>
+      <!-- Aqui va el logo -->
+      <header class="header">
+        <img
+          src="assets/images/Logotipo.png"
+          alt="Imagen de Logotipo"
+          class="logotipo"
+        />
+        <!-- Aqui el menu de navegación -->
+        <nav class="navigation">
+          <a href="#services" class="services">Servicios</a>
+          <a href="#projects" class="projects">Proyectos</a>
+          <a href="#contact" class="contact">Contacto</a>
+        </nav>
+      </header>
+      <!-- Aqui el contenido -->
+      <main class="main">
+        <section>
+          <header>
+            <h2 class="title" id="services">Servicios</h2>
+          </header>
+          <main class="text">
+            <div class="box-container">
+              <figure class="box-mini-target">
+                <img
+                  src="/assets/images/Blog.jpg"
+                  alt="Imagen de blog"
+                  class="img-target"
+                />
+                <p class="title-target">Blog</p>
+                <a
+                  href="https://ComputerLearning5.blogspot.com"
+                  target="_blank"
+                >
+                  <p class="ej-web">Ejemplo</p>
+                </a>
+              </figure>
+              <figure class="box-mini-target">
+                <img
+                  src="/assets/images/Portafolio-digital.jpg"
+                  alt="Imagen de portafolio digital"
+                  class="img-target"
+                />
+                <p class="title-target">Portafolio</p>
+                <a href="#" target="_blank">
+                  <p class="ej-web">Ejemplo</p>
+                </a>
+              </figure>
+              <figure class="box-mini-target">
+                <img
+                  src="/assets/images/Tienda online.png"
+                  alt=""
+                  class="img-target"
+                />
+                <p class="title-target">Tienda online</p>
+                <a href="#" target="_blank">
+                  <p class="ej-web">Ejemplo</p>
+                </a>
+              </figure>
+              <figure class="box-mini-target">
+                <img
+                  src="/assets/images/Foros web.png"
+                  alt=""
+                  class="img-target"
+                />
+                <p class="title-target">Foros web</p>
+                <a href="#" target="_blank">
+                  <p class="ej-web">Ejemplo</p>
+                </a>
+              </figure>
+              <figure class="box-mini-target">
+                <img
+                  src="/assets/images/Web corporativa.png"
+                  alt=""
+                  class="img-target"
+                />
+                <p class="title-target">Corporativa</p>
+                <a href="#" target="_blank">
+                  <p class="ej-web">Ejemplo</p>
+                </a>
+              </figure>
             </div>
-        </aside>
-        <!-- Pie de página -->
-        <footer class="footer">Sitio web desarrollado por <a href="index.html">Servicios Web</a></footer>
+          </main>
+        </section>
+        <section>
+          <header>
+            <h2 class="title" id="projects">Proyectos</h2>
+          </header>
+          <main class="text"></main>
+          <main>
+            <div class="text" id="developerProject"></div>
+          </main>
+        </section>
+        <section>
+          <header>
+            <h2 class="title" id="contact">Contacto</h2>
+          </header>
+          <main>
+            <div>
+              Si quieres contactarnos, puedes hacerlo a través de los siguientes
+              medios:
+              <div class="text" id="developerContact"></div>
+            </div>
+          </main>
+        </section>
+      </main>
+      <!-- Información de los participantes del proyecto y formulario de contacto -->
+      <aside class="aside">
+        <h2 class="subtitle">Desarrolladores</h2>
+        <div class="presentation">
+          <article class="target-presentation">
+            <div
+              class="badge-base LI-profile-badge"
+              data-locale="es_ES"
+              data-size="medium"
+              data-theme="dark"
+              data-type="VERTICAL"
+              data-vanity="raul-callejas-front-end"
+              data-version="v1"
+            ></div>
+            <a
+              href="https://ComputerLearning5.blogspot.com"
+              class="buttom"
+              target="_blank"
+              >Ver portafolio</a
+            >
+          </article>
+          <article class="target-presentation">
+            <div
+              class="badge-base LI-profile-badge"
+              data-locale="es_ES"
+              data-size="medium"
+              data-theme="dark"
+              data-type="VERTICAL"
+              data-vanity="3dgarxd"
+              data-version="v1"
+            ></div>
+            <a href="#" class="buttom" target="_blank">Ver portafolio</a>
+          </article>
+        </div>
+      </aside>
+      <!-- Pie de página -->
+      <footer class="footer">
+        Sitio web desarrollado por <a href="index.html">Servicios Web</a>
+      </footer>
     </div>
     <script src="script.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-</body>
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+  </body>
 </html>

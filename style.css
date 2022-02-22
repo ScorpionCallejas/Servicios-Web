@@ -1,54 +1,55 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    margin: 0;
-    background: #E9ECF4;
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+  margin: 0;
+  background-color: #aec2f8;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
 
 .badge-base {
-    width: 81%;
-    display: block;
-    margin: 0 auto;
+  width: 81%;
+  display: block;
+  margin: 0 auto;
 }
 
 a {
-    color: yellow;
-    text-decoration: none;
+  color: yellow;
+  text-decoration: none;
 }
 
 a:hover {
-    color: turquoise;
+  color: turquoise;
 }
 
 a:active {
-    color: purple;
+  background-color: #000;
+  color: rgb(255, 145, 0);
 }
 
 /* CSS grid */
 
 .grid-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    text-align: center;
-    grid-gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  text-align: center;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
     "header header header"
     "main main aside"
     "footer footer footer";
@@ -58,179 +59,262 @@ a:active {
 .grid-container .main,
 .grid-container .aside,
 .grid-container .footer {
-	background: #fff;
-	padding: 20px;
-	border-radius: 4px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .grid-container .header {
-    grid-area: header;
-    padding: 0;
-    background-color: rgba(245, 141, 148, 0.780);
+  grid-area: header;
+  padding: 0;
+  background-color: rgba(245, 141, 148, 0.78);
 }
 
 .grid-container .main {
-    grid-area: main;
+  grid-area: main;
 }
 
 .grid-container .aside {
-    grid-area: aside;
-    text-transform: uppercase;
-    background-color: rgba(216, 250, 216, 0.8);
+  grid-area: aside;
+  text-transform: uppercase;
+  background-color: rgba(216, 250, 216, 0.8);
 }
 
 .grid-container .footer {
-    grid-area: footer;
-    background-color: rgb(8, 8, 168);
-    color: white;
+  grid-area: footer;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .navigation .services,
 .navigation .projects,
 .navigation .contact {
-    display: inline;
-    background-color: #E9ECF4;
-    color: green;
-    font-size: 30px;
-    width: 30px;
-    padding: 5px;
-    margin: 35px;
-    transition: 0.3s;
-    border-radius: 10px;
-    font-family: fantasy;
+  display: inline;
+  background-color: #e9ecf4;
+  color: green;
+  font-size: 30px;
+  width: 30px;
+  padding: 5px;
+  margin: 35px;
+  transition: 0.3s;
+  border-radius: 10px;
+  font-family: fantasy;
 }
 
 .services:hover {
-    box-shadow: 0px 5px 5px red;
-    color: red;
-    font-size: 32px;
-    cursor: pointer;
+  box-shadow: 0px 5px 5px red;
+  color: red;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 .projects:hover {
-    box-shadow: 0px 5px 5px blue;
-    color: blue;
-    font-size: 32px;
-    cursor: pointer;
+  box-shadow: 0px 5px 5px blue;
+  color: blue;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 .contact:hover {
-    box-shadow: 0px 5px 5px purple;
-    color: purple;
-    font-size: 32px;
-    cursor: pointer;
+  box-shadow: 0px 5px 5px purple;
+  color: purple;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 .services:active {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 
 .projects:active {
-    background-color: blue;
-    color: white;
+  background-color: blue;
+  color: white;
 }
 
 .contact:active {
-    background-color: purple;
-    color: white;
+  background-color: purple;
+  color: white;
 }
 
 .title {
-    font-family: cursive;
-    font-size: 1.5em;
-    width: 40%;
-    height: auto;
-    margin: 25px;
-    padding: 15px;
-    background-color: silver;
-    color: red;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: -5px -5px blue, 5px 5px purple;
+  font-family: cursive;
+  font-size: 1.5em;
+  width: 40%;
+  height: auto;
+  margin: 25px;
+  padding: 15px;
+  background-color: silver;
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -5px -5px blue, 5px 5px purple;
 }
 
 .text {
-    text-align: left;
-    font-size: 1em;
+  text-align: left;
+  font-size: 1em;
 }
 
 .subtitle {
-    color: rgb(255, 247, 233);
-    text-shadow: blue 0 0 10px, blue 0 0 10px, blue 0 0 10px;
+  color: rgb(255, 247, 233);
+  text-shadow: blue 0 0 10px, blue 0 0 10px, blue 0 0 10px;
 }
 
 .target-presentation {
-    background-color: rgb(188, 255, 188);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 7px 7px 7px black;
+  background-color: rgb(188, 255, 188);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 7px 7px 7px black;
 }
 
 .buttom {
-    display: block;
-    width: 80%;
-    border: red 5px groove;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 0, 0.5);
-    color: rgb(216, 24, 7);
-    font-weight: bold;
+  display: block;
+  width: 80%;
+  border: red 5px groove;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 30px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: rgba(255, 255, 0, 0.5);
+  color: rgb(216, 24, 7);
+  font-weight: bold;
 }
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-areas: 
-        "header header header"
-        "navigation navigation navigation"
-        "main main main"
-        "aside aside aside"
-        "footer footer footer";
-    }
+  .grid-container {
+    grid-template-areas:
+      "header header header"
+      "navigation navigation navigation"
+      "main main main"
+      "aside aside aside"
+      "footer footer footer";
+  }
 
-    .badge-base {
-        width: 250px;
-    }
+  .badge-base {
+    width: 250px;
+  }
 
-    .presentation {
-        overflow: scroll;
-        display: flex;
-        flex-direction: row;
-    }
+  .presentation {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+  }
 
-    .target-presentation {
-        width: 300px;
-    }
+  .target-presentation {
+    width: 300px;
+  }
 }
 
 /* Celular */
 @media screen and (max-width: 450px) {
-    .title {
-        width: 70%;
-        font-size: 2em;
-        font-weight: bold;
-    }
+  .title {
+    width: 70%;
+    font-size: 2em;
+    font-weight: bold;
+  }
 
-    .subtitle {
-        font-size: 1.5em;
-        margin: 10px;
-    }
+  .subtitle {
+    font-size: 1.5em;
+    margin: 10px;
+  }
 
-    .presentation {
-        overflow: scroll;
-        display: flex;
-        flex-direction: row;
-    }
+  .presentation {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+  }
 
-    .target-presentation {
-        width: 300px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  .target-presentation {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.box-container {
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: auto;
+  height: 275px;
+  overflow: auto;
+}
+
+.box-mini-target {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 5px;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 240px;
+  box-shadow: 0px 5px 5px #000, 0px 5px 10px silver, 0px 5px 15px silver;
+  overflow: hidden;
+}
+
+.img-target {
+  height: 100%;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.title-target {
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #8fffff 0,
+    #7ffffb 16.67%,
+    #73f5ec 33.33%,
+    #6cd8d8 50%,
+    #67bbc1 66.67%,
+    #64a3ac 83.33%,
+    #618e98 100%
+  );
+  color: rgb(255, 0, 0);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.ej-web {
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #a3a7ff 0,
+    #7a8ffc 25%,
+    #3c78f2 50%,
+    #0063e8 75%,
+    #0051de 100%
+  );
+  position: absolute;
+  margin: 0;
+  bottom: 15px;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.img-target:hover {
+  filter: grayscale(100%);
+  transform: scale(1.2);
+}
+
+.ej-web:hover {
+  transform: scale(1.5);
 }
