@@ -184,59 +184,7 @@ a:active {
   font-weight: bold;
 }
 
-/* Tablet */
-@media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-areas:
-      "header header header"
-      "navigation navigation navigation"
-      "main main main"
-      "aside aside aside"
-      "footer footer footer";
-  }
-
-  .badge-base {
-    width: 250px;
-  }
-
-  .presentation {
-    overflow: scroll;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .target-presentation {
-    width: 300px;
-  }
-}
-
-/* Celular */
-@media screen and (max-width: 450px) {
-  .title {
-    width: 70%;
-    font-size: 2em;
-    font-weight: bold;
-  }
-
-  .subtitle {
-    font-size: 1.5em;
-    margin: 10px;
-  }
-
-  .presentation {
-    overflow: scroll;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .target-presentation {
-    width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
+/* Tarjetas de servicios */
 
 .box-container {
   overflow-y: hidden;
@@ -319,3 +267,58 @@ a:active {
 .ej-web:hover {
   transform: scale(1.5);
 }
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      "header header header"
+      "navigation navigation navigation"
+      "main main main"
+      "aside aside aside"
+      "footer footer footer";
+  }
+
+  .badge-base {
+    width: 250px;
+  }
+
+  .presentation {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .target-presentation {
+    width: 300px;
+  }
+}
+
+/* Celular */
+@media screen and (max-width: 450px) {
+  .title {
+    width: 70%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+    margin: 10px;
+  }
+
+  .presentation {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .target-presentation {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
