@@ -77,7 +77,6 @@ a:active {
 .grid-container .aside {
   grid-area: aside;
   text-transform: uppercase;
-  background-color: rgba(216, 250, 216, 0.8);
 }
 
 .grid-container .footer {
@@ -144,7 +143,6 @@ a:active {
   height: auto;
   margin: 25px;
   padding: 15px;
-  background-color: silver;
   color: red;
   margin-left: auto;
   margin-right: auto;
@@ -161,8 +159,11 @@ a:active {
   text-shadow: blue 0 0 10px, blue 0 0 10px, blue 0 0 10px;
 }
 
+/* Tarjetas de presentación */
+
 .target-presentation {
   background-color: rgb(188, 255, 188);
+  border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 10px;
@@ -179,7 +180,7 @@ a:active {
   border-radius: 30px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  background-color: rgba(255, 255, 0, 0.5);
+  background-color: rgb(255, 255, 255);
   color: rgb(216, 24, 7);
   font-weight: bold;
 }
@@ -191,7 +192,7 @@ a:active {
   overflow-x: auto;
   white-space: nowrap;
   width: auto;
-  height: 275px;
+  height: 320px;
   overflow: auto;
 }
 
@@ -202,8 +203,8 @@ a:active {
   margin: 5px;
   display: inline-block;
   position: relative;
-  width: 200px;
-  height: 240px;
+  width: 225px;
+  height: 285px;
   box-shadow: 0px 5px 5px #000, 0px 5px 10px silver, 0px 5px 15px silver;
   overflow: hidden;
 }
@@ -215,6 +216,7 @@ a:active {
 }
 
 .title-target {
+  font-size: 25px;
   background-image: radial-gradient(
     circle at 50% -20.71%,
     #8fffff 0,
@@ -319,6 +321,14 @@ a:active {
     padding-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .box-container {
+    height: 300px;
+  }
+
+  .box-mini-target {
+    height: 265px;
   }
 }
 
