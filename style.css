@@ -1,3 +1,10 @@
+:root {
+  --main-color: rgb(255, 0, 0);
+  --secundary-color-1: rgb(0, 0, 255);
+  --secundary-color-2: rgb(128, 0, 128);
+  --secundary-color-3: rgb(4, 167, 4);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +19,6 @@ img {
 
 body {
   margin: 0;
-  background-color: #aec2f8;
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -25,23 +31,44 @@ body {
 }
 
 a {
-  color: yellow;
+  color: var(--main-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: turquoise;
+  color: var(--secundary-color-1);
 }
 
-a:active {
-  background-color: #000;
-  color: rgb(255, 145, 0);
+/* Estilos de texto */
+.title {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 35px;
+  width: 40%;
+  height: auto;
+  margin: 25px;
+  padding: 15px;
+  color: var(--main-color);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -5px -5px var(--secundary-color-1), 5px 5px var(--secundary-color-2);
+}
+
+.text {
+  text-align: left;
+  font-size: 1em;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-family: cursive;
+  margin: 0;
+  color: var(--secundary-color-2);
 }
 
 /* CSS grid */
 
 .grid-container {
-  width: 90%;
+  width: 95%;
   max-width: 1000px;
   margin: 20px auto;
   display: grid;
@@ -50,12 +77,13 @@ a:active {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
-    "header header header"
+    "header nav nav"
     "main main aside"
     "footer footer footer";
 }
 
 .grid-container .header,
+.grid-container .navigation,
 .grid-container .main,
 .grid-container .aside,
 .grid-container .footer {
@@ -67,21 +95,31 @@ a:active {
 .grid-container .header {
   grid-area: header;
   padding: 0;
-  background-color: rgba(245, 141, 148, 0.78);
+  width: 230px;
+  justify-self: center;
+}
+
+.grid-container .navigation {
+  grid-area: nav;
+  align-self: center;
 }
 
 .grid-container .main {
   grid-area: main;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 5px 5px 5px black;
 }
 
 .grid-container .aside {
   grid-area: aside;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 5px 5px 5px black;
   text-transform: uppercase;
 }
 
 .grid-container .footer {
   grid-area: footer;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--secundary-color-2);
   color: white;
 }
 
@@ -89,80 +127,59 @@ a:active {
 .navigation .projects,
 .navigation .contact {
   display: inline;
-  background-color: #e9ecf4;
-  color: green;
-  font-size: 30px;
-  width: 30px;
-  padding: 5px;
-  margin: 35px;
+  background-color: #e4e5e7;
+  color: var(--secundary-color-3);
+  font-size: 31px;
+  padding: 10px;
+  margin: 25px;
   transition: 0.3s;
   border-radius: 10px;
-  font-family: fantasy;
+  font-family: 'Supermercado One', cursive;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px black;
 }
 
 .services:hover {
-  box-shadow: 0px 5px 5px red;
-  color: red;
-  font-size: 32px;
+  box-shadow: 0px 5px 5px var(--main-color);
+  color: var(--main-color);
+  font-size: 33px;
   cursor: pointer;
 }
 
 .projects:hover {
-  box-shadow: 0px 5px 5px blue;
-  color: blue;
-  font-size: 32px;
+  box-shadow: 0px 5px 5px var(--secundary-color-1);
+  color: var(--secundary-color-1);
+  font-size: 33px;
   cursor: pointer;
 }
 
 .contact:hover {
-  box-shadow: 0px 5px 5px purple;
-  color: purple;
-  font-size: 32px;
+  box-shadow: 0px 5px 5px var(--secundary-color-2);
+  color: var(--secundary-color-2);
+  font-size: 33px;
   cursor: pointer;
 }
 
 .services:active {
-  background-color: red;
+  background-color: var(--main-color);
   color: white;
 }
 
 .projects:active {
-  background-color: blue;
+  background-color: var(--secundary-color-1);
   color: white;
 }
 
 .contact:active {
-  background-color: purple;
+  background-color: var(--secundary-color-3);
   color: white;
 }
 
-.title {
-  font-family: cursive;
-  font-size: 1.5em;
-  width: 40%;
-  height: auto;
-  margin: 25px;
-  padding: 15px;
-  color: red;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: -5px -5px blue, 5px 5px purple;
-}
-
-.text {
-  text-align: left;
-  font-size: 1em;
-}
-
-.subtitle {
-  color: rgb(255, 247, 233);
-  text-shadow: blue 0 0 10px, blue 0 0 10px, blue 0 0 10px;
-}
 
 /* Tarjetas de presentación */
 
 .target-presentation {
-  background-color: rgb(188, 255, 188);
+  background-color: rgb(206, 205, 205);
   border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -174,14 +191,13 @@ a:active {
 .buttom {
   display: block;
   width: 80%;
-  border: red 5px groove;
+  border: var(--main-color) 5px groove;
   margin: 10px auto;
   padding: 10px;
   border-radius: 30px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(216, 24, 7);
+  background-color: #fff;
   font-weight: bold;
 }
 
@@ -205,7 +221,7 @@ a:active {
   position: relative;
   width: 225px;
   height: 285px;
-  box-shadow: 0px 5px 5px #000, 0px 5px 10px silver, 0px 5px 15px silver;
+  box-shadow: 0px 5px 5px #000, 0px 5px 10px rgb(192, 192, 192), 0px 5px 15px rgb(192, 192, 192);
   overflow: hidden;
 }
 
@@ -242,25 +258,6 @@ a:active {
   border-bottom: 5px solid red;
 }
 
-.ej-web {
-  background-image: radial-gradient(
-    circle at 50% -20.71%,
-    #a3a7ff 0,
-    #7a8ffc 25%,
-    #3c78f2 50%,
-    #0063e8 75%,
-    #0051de 100%
-  );
-  position: absolute;
-  margin: 0;
-  bottom: 15px;
-  width: 100%;
-  height: 10%;
-  text-align: center;
-  border-radius: 50px;
-  transition: 0.5s;
-}
-
 .img-target:hover {
   filter: grayscale(100%);
   transform: scale(1.2);
@@ -270,65 +267,12 @@ a:active {
   transform: scale(1.5);
 }
 
-/* Tablet */
-@media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-areas:
-      "header header header"
-      "navigation navigation navigation"
-      "main main main"
-      "aside aside aside"
-      "footer footer footer";
-  }
-
-  .badge-base {
-    width: 250px;
-  }
-
-  .presentation {
-    overflow: scroll;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .target-presentation {
-    width: 300px;
+@media screen and (max-width: 990px) {
+  .navigation .services,
+  .navigation .contact,
+  .navigation .projects {
+    font-size: 23px;
+    padding: 5px;
+    margin: 18px;
   }
 }
-
-/* Celular */
-@media screen and (max-width: 450px) {
-  .title {
-    width: 70%;
-    font-size: 2em;
-    font-weight: bold;
-  }
-
-  .subtitle {
-    font-size: 1.5em;
-    margin: 10px;
-  }
-
-  .presentation {
-    overflow: scroll;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .target-presentation {
-    width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .box-container {
-    height: 300px;
-  }
-
-  .box-mini-target {
-    height: 265px;
-  }
-}
-

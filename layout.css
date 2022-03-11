@@ -1,0 +1,74 @@
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "aside aside aside"
+      "footer footer footer";
+  }
+
+  .badge-base {
+    width: 250px;
+  }
+
+  .presentation {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .target-presentation {
+    width: 300px;
+    margin: 10px;
+  }
+}
+
+/* Celular */
+@media screen and (max-width: 450px) {
+  .title {
+    width: 70%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+    margin: 10px;
+  }
+
+  .presentation {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .target-presentation {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .box-container {
+    height: 300px;
+  }
+
+  .box-mini-target {
+    height: 265px;
+  }
+}
+
+/* Extra */
+@media screen and (max-width: 350px){
+  .title {
+    font-size: 25px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+}
+
